@@ -87,6 +87,7 @@ flutter:
     - assets\images\dairyeggs.png
     - assets\images\fruitsvegies.png
     - assets\images\meatfish.png
+    - assets\images\redapple2.png
 
   fonts:
     - family: Roboto

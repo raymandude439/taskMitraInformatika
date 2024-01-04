@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taskmit/NavBar.dart';
+import 'package:taskmit/productdetail.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -269,9 +270,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               InkWell(
-                                // onTap: () {
-                                //       Navigator.pushReplacementNamed(context, buttonRoute);
-                                //     },
+                                onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => ProductDetail(),
+                                        )).then((value) => setState(() {}));
+                                    },
                                 child: Container(
                                   width: 30,
                                   height: 30,
